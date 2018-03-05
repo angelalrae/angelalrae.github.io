@@ -1,0 +1,237 @@
+html {
+    background: #f7fff7;
+}
+
+header {
+    width: 100%;
+}
+
+.overlay {
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    background: rgba(34, 34, 34, .5);
+    z-index: 2;
+    height: 100px;
+    top: 0;
+}
+
+.overlay a {
+    float: right;
+    line-height: 100px;
+    margin: auto 1em;
+    color: #02111b;
+}
+
+.overlay a:hover {
+    color: #3891a6;
+}
+
+.logo {
+    position: absolute;
+    opacity: 1;
+}
+
+#logo {
+    height: 80px;
+    margin: 10px auto;
+}
+
+.images {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#gg {
+    animation: PHOTO-FADE 15s infinite 10s;
+}
+
+#garden {
+    animation: PHOTO-FADE 15s infinite 5s;
+}
+
+#me {
+    animation: PHOTO-FADE 15s infinite;
+}
+
+.holder {
+    width: 100%;
+    z-index: 0;
+}
+
+.info {
+    display: absolute;
+}
+
+.icon {
+    display: block;
+    height: 4em;
+    margin: auto;
+}
+
+.info section {
+    text-align: center;
+    padding: 2em 8em;
+    min-height: 300px;
+}
+
+.flex-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #78cad2;
+    color: #f7fff7;
+}
+
+#food {
+    background-color: #360000;
+    background-image: url("background-images/soil.jpg");
+}
+
+#food h1,
+#food p,
+#service h1,
+#service p {
+    color: #f7fff7;
+}
+
+#rfc-link,
+#dhi-link {
+    font-family: montserratmedium;
+    font-size: 1em;
+}
+
+#rfc-link {
+    color: #f7fff7;
+}
+
+#dhi-link {
+    color: #343434;
+}
+
+#rfc-link:hover,
+#dhi-link:hover {
+    color: #78cad2;
+}
+
+#web {
+    padding: 2em 5em;
+}
+
+.flex-container,
+.flex-photos {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container p,
+.flex-container iframe {
+    margin: 1em;
+}
+
+iframe {
+    border: 3px solid #343434;
+}
+
+#service,
+.credit {
+    background-color: #78cad2;
+}
+
+.flex-photos {
+    margin: auto 8em;
+    justify-content: space-between;
+}
+
+.flex-photos img {
+    margin-top: 1em;
+    height: 200px;
+    border: 3px solid #343434;
+}
+
+footer {
+    background: #3891a6;
+    height: 2em;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+footer img {
+    height: .8em;
+    margin-right: 5px;
+}
+
+footer a {
+    line-height: 1.25em;
+    padding: 0 1em;
+    color: #02111b;
+}
+
+footer a:visited {
+    color: #02111b;
+}
+
+footer a:hover {
+    color: #f7fff7;
+}
+
+@-webkit-keyframes PHOTO-FADE {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    36%,
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes PHOTO-FADE {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    36%,
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes PHOTO-FADE {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    36%,
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes PHOTO-FADE {
+    0%,
+    30% {
+        opacity: 1;
+    }
+    36%,
+    94% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
