@@ -99,6 +99,10 @@ header {
     color: #f7fff7;
 }
 
+.insta {
+    width: 100%;
+}
+
 #rfc-link,
 #dhi-link {
     font-family: montserratmedium;
