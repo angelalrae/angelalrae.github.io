@@ -42,6 +42,11 @@ header {
     z-index: 1;
 }
 
+.content {
+    height: 300px;
+    padding: 5em;
+}
+
 .credit {
     background-color: #78cad2;
 }
