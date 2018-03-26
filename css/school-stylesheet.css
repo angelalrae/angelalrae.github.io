@@ -64,15 +64,31 @@ header {
     justify-content: center;
 }
 
-
-/* .button:hover {
+.button:hover {
     background-color: #78cad2;
     color: #f7fff7;
-} */
+}
 
-#cpsc,
-#writing {
+#cpsc {
     background-color: #78cad2;
+}
+
+#envs {
+    background-image: url('background-images/grass.jpeg')
+}
+
+#envs h1,
+#envs h4 {
+    color: #f7fff7;
+}
+
+h4 {
+    text-align: left;
+    margin-top: .6em;
+}
+
+p {
+    text-align: left;
 }
 
 .credit {
