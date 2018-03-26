@@ -42,9 +42,37 @@ header {
     z-index: 1;
 }
 
-.content {
-    height: 300px;
-    padding: 5em;
+.info {
+    display: absolute;
+}
+
+.icon {
+    display: block;
+    height: 4em;
+    margin: auto;
+}
+
+.info section {
+    text-align: center;
+    padding: 2em 8em;
+    min-height: 300px;
+}
+
+.flex-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* .button:hover {
+    background-color: #78cad2;
+    color: #f7fff7;
+} */
+
+#cpsc,
+#writing {
+    background-color: #78cad2;
 }
 
 .credit {
