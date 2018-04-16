@@ -91,6 +91,16 @@ p {
     text-align: left;
 }
 
+.course-work {
+    margin-left: 2em;
+}
+
+.course-work a {
+    font-family: 'montserratitalic';
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
 .credit {
     background-color: #78cad2;
 }
