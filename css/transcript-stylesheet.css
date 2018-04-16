@@ -48,6 +48,11 @@ html {
     padding-top: 1em;
 }
 
+a {
+    font-size: 1em;
+    text-align: center;
+}
+
 .credit a {
     font-size: 1em;
 }
