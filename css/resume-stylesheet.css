@@ -31,6 +31,9 @@ html {
     z-index: 0;
 }
 
+
+/* HEADER */
+
 .icon {
     display: block;
     height: 4em;
@@ -67,6 +70,9 @@ html {
     color: #3891a6;
 }
 
+
+/* BODY */
+
 .content {
     margin: auto;
     padding: 0 3em 4em;
@@ -76,11 +82,21 @@ html {
 h2 {
     font-family: 'playfair_displaybold';
     margin: 1em auto .3em;
+    text-align: center;
 }
 
 h6 {
     margin-top: 1em;
 }
+
+
+/* #education {
+    background: #78cad2;
+}
+
+#work {
+    background: #3891a6;
+} */
 
 .date {
     font-family: 'montserratlight';
@@ -114,6 +130,9 @@ td li i {
     font-size: .65em;
     max-width: 200px;
 }
+
+
+/* FOOTER */
 
 .credit a {
     font-size: 1em;
@@ -149,6 +168,9 @@ footer a:hover {
 .footer-link {
     display: inline-block;
 }
+
+
+/* TRANSITIONS */
 
 @media only screen and (max-width: 864px) {
     .content {
