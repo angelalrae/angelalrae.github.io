@@ -81,14 +81,12 @@ function popup(url1, height1, width1, url2, height2, width2) {
     if (popupWindow) {
         popupWindow.close();
     }
-    if (popupWindow2) {
-        popupWindow2.close();
-    }
+
     popupWindow = window.open(url1, "window1", 'height=' + height1 + ',width=' + width1 + ',\
     left=0,top=0,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,\
     location=no,directories=yes,status=no');
 
-    popupWindow2 = window.open(url2, "window2", 'height=' + height2 + ',width=' + width2 + ',\
+    popupWindow = window.open(url2, "window2", 'height=' + height2 + ',width=' + width2 + ',\
     left=600,top=300,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,\
     location=no,directories=yes,status=no');
 }
