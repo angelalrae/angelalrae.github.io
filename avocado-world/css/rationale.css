@@ -7,3 +7,15 @@ h1 {
     padding-top: 20px;
     font-size: 2em;
 }
+
+span {
+    color: #bfae48;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.foot-note {
+    padding-top: 10px;
+}
