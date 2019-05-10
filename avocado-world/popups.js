@@ -4,11 +4,11 @@ let popupWindow;
 document.onkeydown = function(key_pressed) {
     switch (key_pressed.keyCode) {
         case 37:
-            counter = (counter - 1) % 10;
+            counter = (counter - 1) % 9;
             createPopUps(counter);
             break;
         case 39:
-            counter = (counter + 1) % 10;
+            counter = (counter + 1) % 9;
             createPopUps(counter);
             break;
     }
@@ -51,12 +51,12 @@ function getUrlData(counter) {
                 "https://www.etsy.com/listing/538957048/avocado-shirt-adidas-avocado-t-shirt", 613, 804
             ];
         case 5:
-            return ["https://www.instagram.com/p/Bw0neCNBEwF/", 413, 804,
-                "https://the-amateur-chef.tumblr.com/post/182735914097/the-father-and-the-son", 413, 804
-            ];
-        case 6:
             return ["https://youtu.be/DhaG_Zi6izU", 530, 804,
                 "https://twitter.com/angielourae/status/1013942280284135424", 413, 804
+            ];
+        case 6:
+            return ["https://www.instagram.com/p/Bw0neCNBEwF/", 413, 804,
+                "https://the-amateur-chef.tumblr.com/post/182735914097/the-father-and-the-son", 413, 804
             ];
         case 7:
             return ["https://www.refinery29.com/en-ca/2019/04/230021/oprah-avocado-orchard-daily-show", 413, 804,
@@ -66,13 +66,9 @@ function getUrlData(counter) {
             return ["https://www.delish.com/food-news/a26963442/millennialls-ignore-avocado-recall/", 413, 804,
                 "https://www.redbubble.com/people/tartarbinks/works/21819235-avocado-scream", 413, 804
             ];
-        case 9:
-            return ["https://medium.com/@angela.rae/the-miracle-of-life-779eda4f7ac3", 413, 804,
-                "https://www.vox.com/the-goods/2019/4/3/18293803/trump-closing-border-avocado-prices-shortage", 413, 804
-            ];
         case 0:
             return ["https://docs.google.com/document/d/1RADjEKmTb5k2ddUc-iRGkulWpGMbfy9kUH895VSAx-E/edit?usp=sharing", 600, 500,
-                "https://news.google.com/search?q=avocado", 600, 600
+                "https://www.vox.com/the-goods/2019/4/3/18293803/trump-closing-border-avocado-prices-shortage", 413, 804
             ];
     }
 }
