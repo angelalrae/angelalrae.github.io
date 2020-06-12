@@ -20,11 +20,15 @@ header {
     float: right;
     line-height: 100px;
     margin: auto 1em;
-    color: #02111b;
+    color: #f7fff7;
 }
 
 .overlay a:hover {
     color: #3891a6;
+}
+
+#courses_button {
+    color: #78cad2;
 }
 
 .logo {
@@ -58,33 +62,10 @@ header {
     min-height: 300px;
 }
 
-.flex-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.button:hover {
-    background-color: #78cad2;
-    color: #f7fff7;
-}
-
-#cpsc {
-    background-color: #78cad2;
-}
-
-#envs {
-    background-image: url('background-images/grass.jpeg')
-}
-
-#envs h1,
-#envs h4 {
-    color: #f7fff7;
-}
-
 h4 {
-    text-align: left;
-    margin-top: .6em;
+    text-align: center;
+    padding-bottom: .2em;
+    padding-top: 0;
 }
 
 p {
@@ -99,45 +80,6 @@ p {
     font-family: 'montserratitalic';
     font-size: 1em;
     line-height: 1.3em;
-}
-
-.credit {
-    background-color: #78cad2;
-}
-
-.credit {
-    width: 100%
-}
-
-footer {
-    background: #3891a6;
-    min-height: 2em;
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
-}
-
-footer img {
-    height: .8em;
-    margin-right: 5px;
-}
-
-footer a {
-    line-height: 1.25em;
-    padding: 0 1em;
-    color: #02111b;
-}
-
-.footer-link {
-    display: inline-block;
-}
-
-footer a:visited {
-    color: #02111b;
-}
-
-footer a:hover {
-    color: #f7fff7;
 }
 
 @media only screen and (max-width: 525px) {

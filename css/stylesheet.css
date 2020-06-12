@@ -20,7 +20,11 @@ header {
     float: right;
     line-height: 100px;
     margin: auto 1em;
-    color: #02111b;
+    color: #f7fff7;
+}
+
+#home_button {
+    color: #78cad2;
 }
 
 .overlay a:hover {
@@ -88,8 +92,8 @@ header {
 }
 
 #food {
-    background-color: #360000;
-    background-image: url("background-images/soil.jpg");
+    background-color: #343434;
+    /* background-image: url("background-images/soil.jpg"); */
 }
 
 #food h1,
@@ -153,7 +157,10 @@ iframe {
     font-size: 1em;
 }
 
-#service,
+#service {
+    background-color: #343434;
+}
+
 .credit {
     background-color: #78cad2;
 }

@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('montserrat-medium-webfont.eot');
+    src: url('montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'), url('montserrat-medium-webfont.woff2') format('woff2'), url('montserrat-medium-webfont.woff') format('woff'), url('montserrat-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.eot');
+    src: url('montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), url('montserrat-bold-webfont.woff2') format('woff2'), url('montserrat-bold-webfont.woff') format('woff'), url('montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background: #f7fff7;
+}
+
+#portfolio_button {
+    color: #78cad2;
+}
+
+.images {
+    width: 100%;
+    z-index: 1;
+}
+
+.info {
+    display: absolute;
+}
+
+.icon {
+    display: block;
+    height: 4em;
+    margin: auto;
+}
+
+.info section {
+    text-align: center;
+    padding: 2em 8em;
+    min-height: 300px;
+}
+
+.sample {
+    text-align: left;
+    margin-top: 1em;
+}
+
+h5 {
+    text-align: left;
+}
+
+.sample h5 a {
+    text-align: left;
+    font-family: "montserratbold";
+    font-size: 1em;
+}
+
+.hover-shadow {
+    height: 200px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+.row img {
+    height: 200px;
+    border: 3px solid #343434;
+}

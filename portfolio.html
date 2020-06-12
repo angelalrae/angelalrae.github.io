@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts/Playfair/stylesheet.css">
+    <link rel="stylesheet" href="css/fonts/Montserrat/stylesheet.css">
+    <link rel="stylesheet" href="css/fonts/RobotoCondensed/stylesheet.css">
+    <link rel="stylesheet" href="css/defaults.css">
+    <link rel="stylesheet" href="css/header-footer-stylesheet.css">
+    <link rel="stylesheet" href="css/portfolio-stylesheet.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+    <title>Portfolio: Angela Rae</title>
+</head>
+
+<body>
+    <header>
+        <img class="images" src="images/horseback.jpg" alt="">
+        <div class="overlay">
+            <a class="logo" href="index.html"><img id="logo" src="images/ALR.png" alt="Angela Rae logo"></a>
+            <a href="portfolio.html" id="portfolio_button">PORTFOLIO</a>
+            <a href="school.html">COURSES + SKILLS</a>
+            <a href="index.html">HOME</a>
+        </div>
+    </header>
+    <div class="info">
+        <section>
+            <img class="icon" src="images/plan-idea.png" alt="">
+            <h1>Portfolio</h1>
+            <p>Read on to see some of the writings and graphics I'm most proud of creating</p>
+
+            <h4>Writing</h4>
+            <div class="sample">
+                <h5><a href="https://zeelblog.wordpress.com/2018/05/05/is-there-room-for-computers-in-the-environmental-movement/" target="_blank">BLOG POST: Is there room for computers in the environmental movement?</a></h5>
+                <p>Written for an environmental ethics course after we read about simplicity, this blog post reflects on whether or not computers and technology are compatible with environmental sustainabilty, referencing the philosophers we read for the
+                    course. (630 words)</p>
+            </div>
+
+            <div class="sample">
+                <h5><a href="https://medium.com/@angela.rae/i-am-an-introvert-ad0e40754dcd" target="_blank">ESSAY: I am an introvert.</a></h5>
+                <p>In this essay, I consider the lessons I learned navigating through college as an introvert, unlearning everything I'd been taught a shy introvert should be. (1600 words) </p>
+            </div>
+
+            <div class="sample">
+                <h5><a href="https://medium.com/@angela.rae/the-only-episode-of-black-mirror-worth-watching-ceeedce1a2fa" target="_blank">TV REVIEW: The ONLY episode of 'Black Mirror' worth watching</a></h5>
+                <p>My thoughts on season five of <i>Black Mirror</i>, a dystopian sci-fi series that has gone downhill since Netflix bought it. (900 words)</p>
+            </div>
+
+            <h4>Event Flyers</h4>
+            <div class="row">
+                <div class="column">
+                    <img src="images/portfolio/wasted-movie-flyer-1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/portfolio/wasted-movie-flyer-2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/portfolio/eating-animals-movie-flyer-1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="images/portfolio/eating-animals-movie-flyer-2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+            <p>I recognize now that the "Wasted!" film posters do not meet accessibility standards, in the lack of sufficient color contrast, thin lettering, and red-green text in the checkered background poster.</p>
+
+            <!-- <h4>Scholarship Flyers</h4>
+            <p></p> -->
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/portfolio/wasted-movie-flyer-1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/portfolio/wasted-movie-flyer-2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/portfolio/eating-animals-movie-flyer-1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/portfolio/eating-animals-movie-flyer-2.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="images/portfolio/wasted-movie-flyer-1.png" onclick="currentSlide(1)" alt="Wasted! The Story of Food Waste - flyer 1" style="height: 200px;">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/portfolio/wasted-movie-flyer-2.png" onclick="currentSlide(2)" alt="Wasted! The Story of Food Waste - flyer 2" style="height: 200px;">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/portfolio/eating-animals-movie-flyer-1.jpg" onclick="currentSlide(3)" alt="Eating Animals - flyer 1" style="height: 200px;">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/portfolio/eating-animals-movie-flyer-2.jpg" onclick="currentSlide(4)" alt="Eating Animals - flyer 2" style="height: 200px;">
+                    </div>
+                </div>
+            </div>
+            <script src="js/lightbox.js"></script>
+        </section>
+    </div>
+    <div class="credit ">Icons made by <a href="http://www.freepik.com " title="Freepik " target="_blank">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/ "
+            title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a>
+    </div>
+
+    <footer>
+        <h3>
+            <div class="footer-link">
+                <p>Find me here:</p>
+            </div>
+            <div class="footer-link">
+                <a href="https://www.linkedin.com/in/angelarae/ " target="_blank">
+                    <img src="images/linkedin.png ">LinkedIn</a>
+            </div>
+            <div class="footer-link">
+                <a href="https://github.com/angelalrae " target="_blank">
+                    <img src="images/github.png ">Git</a>
+            </div>
+        </h3>
+    </footer>
+</body>
