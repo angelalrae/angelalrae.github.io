@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts/Playfair/stylesheet.css">
     <link rel="stylesheet" href="css/fonts/Montserrat/stylesheet.css">
@@ -20,13 +21,20 @@
 
 <body>
     <header>
-        <img class="images" src="images/horseback.jpg" alt="">
         <div class="overlay">
-            <a class="logo" href="index.html"><img id="logo" src="images/ALR.png" alt="Angela Rae logo"></a>
-            <a href="portfolio.html" id="portfolio_button">PORTFOLIO</a>
-            <a href="school.html">COURSES + SKILLS</a>
-            <a href="index.html">HOME</a>
+            <a class="logo-link" href="index.html"><img id="logo-image" src="images/ALR.png" alt="Angela Rae - Digital storyteller logo"></a>
+            <nav>
+                <div class="hamburger">
+                    <img src="images/menu.png" alt="">
+                </div>
+                <ul class="nav-links">
+                    <li><a id="home_button" href="index.html">HOME</a></li>
+                    <li><a id="courses_button" href="school.html">COURSES + SKILLS</a></li>
+                    <li><a id="portfolio_button" href="portfolio.html">PORTFOLIO</a></li>
+                </ul>
+            </nav>
         </div>
+        <img class="images" src="images/horseback.jpg" alt="">
     </header>
     <div class="info">
         <section>
@@ -39,6 +47,12 @@
                 <h5><a href="https://zeelblog.wordpress.com/2018/05/05/is-there-room-for-computers-in-the-environmental-movement/" target="_blank">BLOG POST: Is there room for computers in the environmental movement?</a></h5>
                 <p>Written for an environmental ethics course after we read about simplicity, this blog post reflects on whether or not computers and technology are compatible with environmental sustainabilty, referencing the philosophers we read for the
                     course. (630 words)</p>
+            </div>
+
+            <div class="sample">
+                <h5><a href="https://medium.com/@angela.rae/self-serving-community-service-4cd8a5dc2dc" target="_blank">ESSAY: Self-Serving Community Service</a></h5>
+                <p>This essay ponders the impact of community service, especially service immersion trips like Gonzaga's "Mission Possible" where participants serve outside their home community for a short period of time. I consider how different service
+                    projects I've been a part of fit into established models of community service. (1300 words)</p>
             </div>
 
             <div class="sample">
@@ -125,14 +139,13 @@
             <script src="js/lightbox.js"></script>
         </section>
     </div>
-    <div class="credit ">Icons made by <a href="http://www.freepik.com " title="Freepik " target="_blank">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/ "
-            title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a>
-    </div>
-
     <footer>
-        <h3>
+        <div class="credit ">
+            <p>All icons from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/ " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></p>
+        </div>
+        <div class="other-links">
             <div class="footer-link">
-                <p>Find me here:</p>
+                <h3>Find me here:</h3>
             </div>
             <div class="footer-link">
                 <a href="https://www.linkedin.com/in/angelarae/ " target="_blank">
@@ -140,8 +153,9 @@
             </div>
             <div class="footer-link">
                 <a href="https://github.com/angelalrae " target="_blank">
-                    <img src="images/github.png ">Git</a>
+                    <img src="images/github.png ">GitHub</a>
             </div>
-        </h3>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>

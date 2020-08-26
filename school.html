@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts/Playfair/stylesheet.css">
     <link rel="stylesheet" href="css/fonts/Montserrat/stylesheet.css">
@@ -19,17 +20,23 @@
 
 <body>
     <header>
-        <img class="images" src="images/crow-captioned.jpg" alt="">
         <div class="overlay">
-            <a class="logo" href="index.html"><img id="logo" src="images/ALR.png" alt="Angela Rae logo"></a>
-            <a href="portfolio.html">PORTFOLIO</a>
-            <a href="school.html" id="courses_button">COURSES + SKILLS</a>
-            <a href="index.html">HOME</a>
+            <a class="logo-link" href="index.html"><img id="logo-image" src="images/ALR.png" alt="Angela Rae - Digital storyteller logo"></a>
+            <nav>
+                <div class="hamburger">
+                    <img src="images/menu.png" alt="">
+                </div>
+                <ul class="nav-links">
+                    <li><a id="home_button" href="index.html">HOME</a></li>
+                    <li><a id="courses_button" href="school.html">COURSES + SKILLS</a></li>
+                    <li><a id="portfolio_button" href="portfolio.html">PORTFOLIO</a></li>
+                </ul>
+            </nav>
         </div>
-
+        <img class="images" src="images/crow-captioned.jpg" alt="">
     </header>
 
-    <div class="info">
+    <div class="content">
         <section>
             <img class="icon" src="images/open-book.png" alt="">
             <h1>Courses and Skills</h1>
@@ -37,10 +44,10 @@
 
             <h4>Design and Development</h4>
             <p><em>Universal Design</em> - Aware of best practices for creating universally accessible web pages, including design for users who are blind/low vision, color blind, deaf, have mobility disabilites, or have cognitive disabilities.</p>
-            <p><em>Web Development</em> - Enjoy creating interactive websites (<i>like this one!</i>) using HTML, CSS, and Javascript.</p>
+            <p><em>Web Development</em> - Enjoy creating websites (<i>like this one!</i>) using HTML, CSS, and Javascript.</p>
             <p><em>Android App Development</em> - Can utilize Android Studio, Java, and XML to build Android phone applications. Also familiar with basics for Firebase storage, asynchronous tasks, working with APIs, and embedding Google Maps services.
             </p>
-            <img class="spacer" src="images/spacer_decor.png" alt="">
+            <img class="spacer" src="images/spacer_decor.svg" alt="">
 
             <h4>Data Processing</h4>
             <p><em>Adobe Analytics</em> - Well-versed in Adobe Analytics interface and able to create projects and reports to find trends in data.</p>
@@ -48,19 +55,19 @@
             <p><em>Data Mining</em> - Used Python and Jupyter notebook to process and analyze datasets and craft reports.</p>
             <p><em>Processing (Java)</em> - Able to create visualizations of datasets including bar and pie graphs using the Processing IDE.
             </p>
-            <img class="spacer" src="images/spacer_decor.png" alt="">
+            <img class="spacer" src="images/spacer_decor.svg" alt="">
 
             <h4>Software Engineering</h4>
             <p><em>Software Engineering</em> - Familiar with project development models, version control basics, and code review and testing standards. </p>
             <p><em>Engineering Ethics</em> - Understand and practice software engineering ethics as detailed in the IEEE Code of Ethics, including data privacy topics and developers' responsibilities to the public.</p>
             <p><em>Computation Theory</em> - Studied regular grammars, finite state automata, context-free grammars, pushdown automata, normal forms, and the Chomsky hierarchy</p>
-            <img class="spacer" src="images/spacer_decor.png" alt="">
+            <img class="spacer" src="images/spacer_decor.svg" alt="">
 
             <h4>Communications</h4>
             <p><em>Adobe Suite</em> - Designed promotional and informational materials with Adobe InDesign and Adobe Photoshop.</p>
             <p><em>Audio + Video</em> - Experienced with Audacity and iMovie to create and edit audio and video projects.</p>
             <p><em>Magazine Journalism</em> - Familar with magazine writing fundamentals including interviewing skills, how to develop story ideas, and best practices for selling and publishing your work.</p>
-            <img class="spacer" src="images/spacer_decor.png" alt="">
+            <img class="spacer" src="images/spacer_decor.svg" alt="">
 
             <h4>Other Interests</h4>
             <p><em>Yoga and Pilates</em> - Practicing since 2016. Biggest accomplishment: bakasana (a.k.a. crow pose, demonstrated above in header photo)</p>
@@ -86,13 +93,13 @@
 
     </div>
 
-    <div class="credit ">Icons made by <a href="http://www.freepik.com " title="Freepik " target="_blank">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/ "
-            title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a>
-    </div>
     <footer>
-        <h3>
+        <div class="credit ">
+            <p>All icons from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/ " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></p>
+        </div>
+        <div class="other-links">
             <div class="footer-link">
-                <p>Find me here:</p>
+                <h3>Find me here:</h3>
             </div>
             <div class="footer-link">
                 <a href="https://www.linkedin.com/in/angelarae/ " target="_blank">
@@ -100,10 +107,11 @@
             </div>
             <div class="footer-link">
                 <a href="https://github.com/angelalrae " target="_blank">
-                    <img src="images/github.png ">Git</a>
+                    <img src="images/github.png ">GitHub</a>
             </div>
-        </h3>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
 
 </body>
 

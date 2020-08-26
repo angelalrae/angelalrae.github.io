@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts/Playfair/stylesheet.css">
     <link rel="stylesheet" href="css/fonts/Montserrat/stylesheet.css">
     <link rel="stylesheet" href="css/fonts/RobotoCondensed/stylesheet.css">
     <link rel="stylesheet" href="css/defaults.css">
+    <link rel="stylesheet" href="css/header-footer-stylesheet.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
@@ -19,10 +21,17 @@
 <body>
     <header>
         <div class="overlay">
-            <a class="logo" href="index.html"><img id="logo" src="images/ALR.png" alt="Angela Rae logo"></a>
-            <a id="portfolio_button" href="portfolio.html">PORTFOLIO</a>
-            <a id="courses_button" href="school.html">COURSES + SKILLS</a>
-            <a id="home_button" href="index.html">HOME</a>
+            <a class="logo-link" href="index.html"><img id="logo-image" src="images/ALR.png" alt="Angela Rae - Digital storyteller logo"></a>
+            <nav>
+                <div class="hamburger">
+                    <img src="images/menu.png" alt="">
+                </div>
+                <ul class="nav-links">
+                    <li><a id="home_button" href="index.html">HOME</a></li>
+                    <li><a id="courses_button" href="school.html">COURSES + SKILLS</a></li>
+                    <li><a id="portfolio_button" href="portfolio.html">PORTFOLIO</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="photos">
             <!--1024 × 460-->
@@ -30,15 +39,15 @@
             <img class="images" id="garden" src="images/garden.jpg" alt="">
             <img class="images" id="me" src="images/me-captioned.jpg" alt="">
         </div>
-
     </header>
 
-    <div class="info">
+    <div class="content">
         <img class="holder" src="images/me.jpg" alt="">
         <section id="hello">
             <img class="icon" src="images/donation-symbol.png" alt="">
             <h1>Hello!</h1>
-            <p>I'm Angela: a technical documentation writer who studied Computer Science, Environmental Studies, and Writing at Gonzaga University. I like cooking, gardening, thrift shopping, practicing pilates, and listening to podcasts.</p>
+            <p>I'm Angela: a technical documentation writer who studied Computer Science, Environmental Studies, and Writing at Gonzaga University. I like cooking, gardening, thrift shopping, practicing pilates, and listening to podcasts. In addition, I
+                am passionate about and motivated by the following three values:</p>
             <div class="flex-buttons">
                 <a href="#service">
                     <div class="button">Community Service</div>
@@ -49,22 +58,20 @@
                 <a href="#food">
                     <div class="button">Food Justice</div>
                 </a>
-
             </div>
         </section>
 
         <section id="service">
             <img class="icon" src="images/social-services.png" alt="">
             <h1>Service creates community</h1>
-            <p>My engagement with community service began in high school, going on the annual service trip through the Episcopal church I grew up attending. In college, I continued in this spirit by going on Gonzaga's "Mission: Possible" (MP) alternative
-                spring break trip, a program that sends students to sites around the country for a week of service. I participated in MP all four years, the last two as a trip leader. On these trips, I got hands on experience with environmental protection
-                and social justice in national parks in San Francisco, CA; worked alongside Catholic Workers and adults with disabilies on a farm in Tacoma, WA; and learned about indigenous culture from the people of the Makah reservation in Neah Bay,
-                WA.
+            <p>My engagement with community service began in high school, going on the annual service trip through the Episcopal church I attended. In college, I continued in this spirit by going on Gonzaga's "Mission: Possible" (MP) alternative spring break
+                trip, a program that sends students to sites around the country for a week of service. I participated in MP all four years, the last two as a trip leader. On these trips, I got hands on experience with environmental protection and social
+                justice in national parks in San Francisco, CA; worked alongside Catholic Workers and adults with disabilies on a farm in Tacoma, WA; and learned about indigenous culture from the people of the Makah reservation in Neah Bay, WA.
                 </br>
                 </br>
                 These trips were my favorite part of my college experience, especially as a leader where I could guide other students on their journey towards realizing the impact of working in community with others. I greatly value service work, and it was wonderful
-                to go to a Jesuit university that prioritizes this. I am currently volunteering with the youth back at my home church, and I hope at some point in my life to participate in post-graduate service through the Jesuit Volunteer Corps, City
-                Year, Food Corps, or a similar program.
+                to go to a Jesuit university that prioritizes this. I documented my reflections in a <a href="https://medium.com/@angela.rae/self-serving-community-service-4cd8a5dc2dc" target="_blank">Medium post about the value of service immersion trips <img src="images/externallink-light.svg"></a>.
+                I am currently volunteering with the youth back at my home church, and I hope at some point in my life to participate in post-graduate service through the Jesuit Volunteer Corps, City Year, Food Corps, or a similar program.
             </p>
             <div class="flex-photos">
                 <div class="captioned-photo">
@@ -91,9 +98,10 @@
             <h1>Technology communicates values</h1>
             <div class="flex-container">
                 <p style="width:100%;">In college, I experienced first-hand how we can use technology to support access to technology and information. As the web designer for
-                    <a id="dhi-link" href="http://as-dh.gonzaga.edu/weaving-our-sisters-voices/" target="_blank">a site to communicate the process and impact of an original musical created by our Theatre and Religious Studies departments</a>, I helped
-                    amplify the reach of the show to a wide range of audiences. Included here is a video of me talking about how the project impacted me, created for the WSV site. I also worked as a research intern for the Digital Humanities Initiative,
-                    where I had my first foray into technical writing. In this role I researched the most effective platform, created guides to be used by students, designed the framework for their final product, and taught the class how to use the tools.</br>
+                    <a id="dhi-link" href="http://as-dh.gonzaga.edu/weaving-our-sisters-voices/" target="_blank">a site to communicate the process and impact of an original musical created by our Theatre and Religious Studies departments <img src="images/externallink-dark.svg"></a>,
+                    I helped amplify the reach of the show to a wide range of audiences. Included here is a video of me talking about how the project impacted me, created for the WSV site. I also worked as a research intern for the Digital Humanities
+                    Initiative, where I had my first foray into technical writing. In this role I researched the most effective platform, created guides to be used by students, designed the framework for their final product, and taught the class how to
+                    use the tools.</br>
                     </br>
                     I enjoy the opportunity to help others use technology to communicate and visualize what is important to them. As a professional technical writer, I help customers understand and better use our data processing software to gain insights that help their
                     businesses run more smoothly. I am also interested in discovering how technology can be designed for universal accessibility that accommodates all range of user abilities.
@@ -135,17 +143,13 @@
         </section>
     </div>
 
-
-
-    <div class="credit ">Icons made by <a href="http://www.freepik.com " title="Freepik " target="_blank">Freepik</a> from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/ "
-            title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a>
-        <!-- Soil image from <a href="http://www.riyasingh.com/soil/ " target="_blank">Education Blog.</a> -->
-    </div>
-
     <footer>
-        <h3>
+        <div class="credit ">
+            <p>All icons from <a href="https://www.flaticon.com/ " title="Flaticon " target="_blank ">www.flaticon.com</a> licensed by <a href="http://creativecommons.org/licenses/by/3.0/ " title="Creative Commons BY 3.0 " target="_blank ">CC 3.0 BY</a></p>
+        </div>
+        <div class="other-links">
             <div class="footer-link">
-                <p>Find me here:</p>
+                <h3>Find me here:</h3>
             </div>
             <div class="footer-link">
                 <a href="https://www.linkedin.com/in/angelarae/ " target="_blank">
@@ -155,8 +159,9 @@
                 <a href="https://github.com/angelalrae " target="_blank">
                     <img src="images/github.png ">GitHub</a>
             </div>
-        </h3>
+        </div>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

@@ -2,49 +2,15 @@ html {
     background: #f7fff7;
 }
 
-header {
-    width: 100%;
-}
 
-.overlay {
-    padding: 0;
-    position: fixed;
-    width: 100%;
-    background: rgba(34, 34, 34, .5);
-    z-index: 2;
-    height: 100px;
-    top: 0;
-}
-
-.overlay a {
-    float: right;
-    line-height: 100px;
-    margin: auto 1em;
-    color: #f7fff7;
-}
+/* ------------------- HOME HEADER ------------------- HOME HEADER ------------------- HOME HEADER -------------------  */
 
 #home_button {
     color: #78cad2;
 }
 
-.overlay a:hover {
-    color: #3891a6;
-}
-
-.logo {
-    position: absolute;
-    opacity: 1;
-}
-
-#logo {
-    height: 80px;
-    margin: 10px auto;
-}
-
 .images {
     position: absolute;
-    width: 100%;
-    z-index: 1;
 }
 
 #gg {
@@ -59,12 +25,16 @@ header {
     animation: PHOTO-FADE 15s infinite;
 }
 
+
+/* ------------------- BODY ------------------- BODY ------------------- BODY -------------------  */
+
 .holder {
+    /* used in body to take space of header images, not externally visible */
     width: 100%;
     z-index: 0;
 }
 
-.info {
+.content {
     display: absolute;
 }
 
@@ -74,7 +44,7 @@ header {
     margin: auto;
 }
 
-.info section {
+.content section {
     text-align: center;
     padding: 2em 8em;
     min-height: 300px;
@@ -86,48 +56,32 @@ header {
     justify-content: center;
 }
 
+.flex-buttons a {
+    line-height: 1.5em;
+}
+
 .button:hover {
     background-color: #78cad2;
     color: #f7fff7;
 }
 
-#food {
-    background-color: #343434;
-    /* background-image: url("background-images/soil.jpg"); */
-}
-
 #food h1,
 #food p,
 #service h1,
-#service p {
+#service p,
+#service a {
     color: #f7fff7;
 }
 
-.insta {
-    width: 100%;
-}
-
-#rfc-link,
-#dhi-link {
+#dhi-link,
+#service a {
     font-family: montserratmedium;
     font-size: 1em;
 }
 
-#rfc-link {
-    color: #f7fff7;
-}
-
-#dhi-link {
-    color: #343434;
-}
-
-#rfc-link:hover,
-#dhi-link:hover {
+#dhi-link:hover,
+#service a:hover {
     color: #78cad2;
-}
-
-#web {
-    padding: 2em 5em;
 }
 
 .flex-container,
@@ -157,14 +111,6 @@ iframe {
     font-size: 1em;
 }
 
-#service {
-    background-color: #343434;
-}
-
-.credit {
-    background-color: #78cad2;
-}
-
 .flex-photos {
     display: flex;
     justify-content: center;
@@ -180,40 +126,34 @@ iframe {
     max-width: 200px;
 }
 
-.credit {
-    width: 100%
+
+/* ------------------- SERVICE ------------------- SERVICE ------------------- SERVICE -------------------  */
+
+#service {
+    background-color: #343434;
 }
 
-footer {
-    background: #3891a6;
-    min-height: 2em;
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
+
+/* ------------------- TECH ------------------- TECH ------------------- TECH -------------------  */
+
+#dhi-link {
+    color: #343434;
 }
 
-footer img {
-    height: .8em;
-    margin-right: 5px;
+
+/* ------------------- FOOD ------------------- FOOD ------------------- FOOD -------------------  */
+
+#food {
+    background-color: #343434;
+    /* background-image: url("background-images/soil.jpg"); */
 }
 
-footer a {
-    line-height: 1.25em;
-    padding: 0 1em;
-    color: #02111b;
+.insta {
+    width: 100%;
 }
 
-.footer-link {
-    display: inline-block;
-}
 
-footer a:visited {
-    color: #02111b;
-}
-
-footer a:hover {
-    color: #f7fff7;
-}
+/* ------------------- HEADER ANIMATION ------------------- HEADER ANIMATION ------------------- HEADER ANIMATION  -------------------  */
 
 @-webkit-keyframes PHOTO-FADE {
     0%,
@@ -271,8 +211,11 @@ footer a:hover {
     }
 }
 
+
+/* ------------------- RESPONSIVE CONTROLS ------------------- RESPONSIVE CONTROLS------------------- RESPONSIVE CONTROLS -------------------  */
+
 @media only screen and (max-width: 864px) {
-    .info section {
+    .content section {
         padding: 2em 4em;
     }
     #food .flex-container {
@@ -283,33 +226,17 @@ footer a:hover {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 902px) {
     .flex-photos {
         flex-wrap: wrap;
     }
 }
 
 @media only screen and (max-width: 525px) {
-    #logo {
-        height: 50px;
-    }
-    .overlay {
-        height: 70px;
-    }
-    .overlay a {
-        font-size: .8em;
-        line-height: 70px;
-    }
-    .info section {
+    .content section {
         padding: 2em 2em;
     }
-    .info section h1 {
+    .content section h1 {
         font-size: 2.3em;
-    }
-    .credit {
-        font-size: .6em;
-    }
-    .footer-link {
-        display: block;
     }
 }

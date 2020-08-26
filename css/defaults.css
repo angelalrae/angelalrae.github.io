@@ -66,6 +66,10 @@ html {
     font-size: 15px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'playfair_displaybold', serif;
     font-size: 3em;
@@ -123,6 +127,10 @@ p em {
 
 p i {
     font-family: 'montserratitalic';
+}
+
+p img {
+    height: 1em;
 }
 
 a {
